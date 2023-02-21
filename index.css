@@ -1,0 +1,60 @@
+.car > img{
+    width: 250px;
+    height:150px;
+    
+}
+body{
+    background-color: rgb(182, 185, 189);
+}
+
+.car{
+    position: absolute;
+    top: 300px;
+    /* left:200px; */
+    animation: car 8s 0s infinite linear;
+}
+
+.wheel > .wheel1 ,.wheel2{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top:97px;
+    left: 55px;
+    /* border: 2px solid red; */
+    border-radius: 50%;
+    
+    animation: wheel 1s 0s infinite linear;
+    
+}
+.road{
+    border: 2px dotted black;
+    position: relative;
+    width: 100%;
+    top:429px;
+}
+
+.wheel > .wheel2{
+    left:155px;
+}
+
+@keyframes car {
+    from{
+        left: 0px;
+    }
+    to{
+        left:100%;
+    }
+    
+}
+
+@keyframes wheel {
+    from{
+
+        transform: rotate(0deg);
+    }
+    to{
+
+        transform: rotate(360deg);
+    }
+    
+}
